@@ -929,7 +929,7 @@ void triggerSetEndTeeth_BasicDistributor()
 {
   int tempEndAngle = (ignition1EndAngle - configPage4.triggerAngle);
   tempEndAngle = ignitionLimits((tempEndAngle));
-  if( (tempEndAngle > 180) || (tempEndAngle <= 0) )
+  if( (tempEndAngle > 360) || (tempEndAngle <= 0) )
   {
     ignition1EndTooth = 2;
     ignition2EndTooth = 1;
